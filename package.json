@@ -1,0 +1,41 @@
+{
+  "name": "ts-union-tools",
+  "version": "0.0.1",
+  "description": "minimal utilities to work with union types and tagged unions (a.k.a. discriminated unions) in TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naruaway/ts-union-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naruaway/ts-union-tools/issues"
+  },
+  "homepage": "https://github.com/naruaway/ts-union-tools",
+  "keywords": [
+    "TypeScript",
+    "tagged unions",
+    "discriminated unions",
+    "pattern matching"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "prepare": "rm -rf dist && tsc && tsc -m commonjs --outDir dist/commonjs",
+    "tscheck": "tsc --noEmit"
+  },
+  "author": "naruaway <naruaway@naruaway.com>",
+  "license": "ISC",
+  "main": "dist/commonjs/index.js",
+  "types": "dist/es/index.d.ts",
+  "module": "dist/es/index.js",
+  "sideEffects": false
+}
