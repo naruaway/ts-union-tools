@@ -36,7 +36,7 @@ const assertType = <T>() => <U extends T>(x: U): U => {
   return x
 }
 
-// omitting return type annotaton to verify type inferecne here
+// omitting return type annotation to verify type inference here
 const createSimplePerson = (type: 'dev' | 'ui/ux') =>
   match(type, {
     dev: () =>

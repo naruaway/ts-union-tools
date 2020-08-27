@@ -21,7 +21,7 @@ type Matchers<
         x: TaggedUnionExtract<TaggedUnion, TagName, Tag>,
       ) => any
       // "_" (underscore) here is intentionally not using constant like `const DEFAULT_CASE_NAME = "_"` to avoid string like "DEFAULT_CASE_NAME" as a part of TypeScript error to users
-      // TODO `x` shold be refined to be unspesified variants rather than the whole TaggedUnion type
+      // TODO `x` should be refined to be unspecified variants rather than the whole TaggedUnion type
     } & { _: (x: TaggedUnion) => any })
 
 export function match<
