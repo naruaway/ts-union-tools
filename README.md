@@ -1,5 +1,7 @@
 # ts-union-tools
 
+**NOTE: https://github.com/gvergnaud/ts-pattern seems to be much better alternative.**
+
 ![Overview](https://user-images.githubusercontent.com/2931577/90972783-0363a980-e557-11ea-8996-1a36182e0d2f.png)
 ts-union-tools is a set of minimal utilities to work with union types and tagged unions (a.k.a. discriminated unions) in TypeScript.
 The main API is pattern matching utility functions called `match` and `matchOn` to do type-safe pattern-match against unions and tagged unions elegantly without `if-else` or `switch`.
